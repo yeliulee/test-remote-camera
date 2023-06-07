@@ -34,7 +34,7 @@ class CameraService {
     if (_controller?.value.isInitialized == true && !disposed) {
       return;
     }
-    disposed = true;
+    disposed = false;
     _controller = CameraController(
       backCamera,
       ResolutionPreset.max,
