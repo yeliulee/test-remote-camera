@@ -14,7 +14,7 @@ class CameraService {
 
   CameraController? _controller;
 
-  bool disposed = false;
+  bool disposed = true;
   late List<CameraDescription> cameras;
   CameraController? get controller => _controller;
   CameraDescription get backCamera =>
